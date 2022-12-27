@@ -1,1 +1,7 @@
 1910.04126.pdf
+report/
+*.ipynb
+*.json
+*.pyc
+*.svg
+*.pdf
