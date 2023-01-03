@@ -1,5 +1,4 @@
-1910.04126.pdf
-report/
+*.pdf
 *.ipynb
 *.json
 *.pyc

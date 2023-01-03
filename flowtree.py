@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import ot
 
 
-EPS = 1e-14
+EPS = 1e-12
 
 
 class Hypercube:
@@ -82,6 +82,7 @@ class Quadtree(Tree):
         bounds[:, 1] = self.phi
         self.root.add_child(
             QuadNode.from_hypercube(Hypercube(bounds, self.X), np.log(self.phi))
+            # if done with sigma, should be np.log(self.phi)+1
         )
 
     def format_points(self, points: Array) -> None:
@@ -123,6 +124,15 @@ class Quadtree(Tree):
         for (i, j), coeff in optimal_flow.items():
             w1_distance += coeff * np.linalg.norm(self.X[i, 1:] - self.X[j, 1:], 1)
         return w1_distance
+
+    def compute_tree_distance(self, i: int, j: int) -> float:
+        found = []
+        for leaf in self.traverse_leaves():
+            if leaf.label == i or leaf.label == j:
+                found.append(leaf)
+                if len(found) == 2:
+                    return self.distance_between(*found)
+        raise ValueError(f"Couldn't find labels {(i, j)}")
 
 class QuadNode(Node):
 
