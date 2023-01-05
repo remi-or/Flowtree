@@ -27,6 +27,11 @@
 \usepackage{ragged2e}
 \usepackage{blindtext}
 \usepackage{qtree}
+\usepackage{array}
+
+
+\DeclareMathOperator\supp{supp}
+\DeclareMathOperator\R{\mathbb{R}}
 
 
 \begin{document}
@@ -92,7 +97,7 @@ To define a distance on $Q(X)$, we say that the edge between a node of depth $d$
 
 Interestegly, this step doesn't involve the distributions $\mu$ and $\nu$ for which we intend to compute an estimate of $W_1$. We can build the quadtree on $X$ and repeat the steps 2 and 3 for any number of distributions, which is why this algorithm is used for neireast neighboor search. 
 
-\subsection{Computing the optimal flow}
+\subsection{Computing the optimal flow} \label{ssec:computing_optimal_flow}
 Step 2 of the flowtree is computing the solution of Kantorovitch problem in regards to $Q(X)$, $\mu$ and $\nu$:
 
 $$
@@ -104,41 +109,15 @@ Here lies the interest of $Q(X)$, because $f^*$ can be computed exaclty with com
 
 To do this, we first turn $Q(X)$ into a tree $D(X, \mu, \nu)$ that we'll call the demand tree, for reasons that will become apparent later. We define $D(X, \mu, \nu)$ by taking $Q(X)$ structure (we leave all nodes intact) and replacing the content of each leaf. Recall each leaf has an index $(i)$ because it corresponds to an element $x_i$ of $X$. Leaf $(i)$ in the quadtree becomes leaf 
 $\left( \lbrace \mu_i \triangleq \mu(x_i) \rbrace , \lbrace \nu_i \triangleq \nu(x_i) \rbrace \right)$ 
-in the demand tree. We call set $\lbrace \mu_i \rbrace$ the $\mu$-demand and same goes for $\nu$. This process is visible in figure REFQtree2Dtree.
+in the demand tree. We call set $\lbrace \mu_i \rbrace$ the $\mu$-demand and same goes for $\nu$. This process is visible in figure \ref{qtree_distrib_ftree}.
 
+\begin{figure}[h]
 \centering
-\begin{tabular}{lll}
+\includegraphics[width=0.8\textwidth]{imgs/qtree_distrib_ftree.png}
+\caption{How the demand tree is formed}
+\label{qtree_distrib_ftree}
+\end{figure}
 
-\Tree[.$Q(X)$ [. [.2 ]
-               [.5 ]]
-            [. [.1 ]
-               [.  [
-               	   [.3 ]
-               	   [.4 ]]]]]
-               	   
-&    
-
-\begin{tabular}{ |c|ccccc| } 
-\hline
-k & 1 & 2 & 3 & 4 & 5 \\ 
-\hline
-$\mu(k)$ & 0.1 & 0.2 & 0 & 0.2 & 0.5 \\ 
-\hline
-$\nu(k)$ & 0.5 & 0.2 & 0 & 0 & 0.3 \\ 
-\hline
-\end{tabular}
-
-&
-
-\Tree[.{$D(X, \mu, \nu)$} [. [.{$\mu_2 = 0.2$ \\ $\nu_2 = 0.2$} ]
-               [.{$\mu_5 = 0.5$ \\ $\nu_5 = 0.3$} ]]
-            [. [.{$\mu_1 = 0.1$ \\ $\nu_1 = 0.4$} ]
-               [. [. {$\emptyset$} ]
-               	  [.{$\mu_4 = 0.2$ } ]]]]
-               		
-\end{tabular}
-
-\justifying
 In practice, since the support of $\mu$ and $\nu$ are bounded by $s$, 
 many of these leaves become leaf $(\emptyset, \emptyset)$, 
 as is the case with leaf $(3)$ in figure REFQtree2Dtree. 
@@ -248,13 +227,13 @@ f & 1 & 2 & 3 & 4 & 5 \\ \hline
 Although we written the $\mu$-demand as a set $\lbrace \mu_i, \dots \rbrace$ to save time, we do need to keep track of both $i$ and the associated quantity $\mu_i$. More on that in part REF. 
 
 \subsection{Compute $W_1$ estimate}
-We now compute the $W_1$ estimate using the optimal flow $f^*$ computed on $D(X, \mu, \nu)$. The logic here is that since $f^*$ is the optimal argument to the Kantorovitch problem defined by the tree distance, itself an approximation of the $l_1$ distance, then using $f^*$ as an argument for the Kantorovitch problem defined by the $l_1$ distance will yield a near-optimal value.\\
+We now compute the $W_1$ estimate using the optimal flow $f^*$ computed on $D(X, \mu, \nu)$. The logic here is that since $f^*$ is the optimal argument to the Kantorovitch problem defined by the tree distance, itself an approximation of the $l_p$ distance, then using $f^*$ as an argument for the Kantorovitch problem defined by the $l_p$ distance will yield a near-optimal value.\\
 
 This final step is quite simple: we just have to sum over the couples for which $f^*$ is non-zero the optimal flow value times the distance of the two points to get the estimate $\widetilde{W}_1$ of $W_1$:
 
 $$
-\widetilde{W}_1(\mu, \nu) = \sum_{(x, x') \in S^*} f^*(x, x') \Vert x - x' \Vert_2
-$$ %TODO Talk about norm 2
+\widetilde{W}_1(\mu, \nu) = \sum_{(x, x') \in S^*} f^*(x, x') \Vert x - x' \Vert_p
+$$ 
 
 with $S^*$ the support of $f^*$.
 
@@ -267,9 +246,9 @@ Since the only use of $f^*$ is to be used for the computation of $\widetilde{W}_
 \\
 with:
 
-4. We update the estimate with $\widetilde{W}_1(\mu, \nu) := \widetilde{W}_1(\mu, \nu) + d \Vert x_i - x_j \Vert_2 $.
+4. We update the estimate with $\widetilde{W}_1(\mu, \nu) := \widetilde{W}_1(\mu, \nu) + d \Vert x_i - x_j \Vert_p $.
 \\
-We can go further add memoïze the distances $\Vert x_i - x_j \Vert_2$ as we compute them and decrease the computationnal cost (by increasing the memory cost).
+We can go further add memoïze the distances $\Vert x_i - x_j \Vert_p$ as we compute them and decrease the computationnal cost (by increasing the memory cost).
 
 \subsection{Data structures}
 As we mentionned ealrier, given a node $N$ with $\mu$-demand and $\nu$-demand, we need to keep track of $i$ and $\mu_i$ (same goes for $\nu$). Thus, we uset an array with 3 columns: index $i$, $\mu_i$ and $\nu_i$. Each node as an array and the algorithm finishes when the root has been visited and its array is empty. If it isn't, then there was an error during the computation of $f^*$. For instance, this happens if the distribution's masses were not normalized to $1$ or if there is no tolerance for floating-point error. To avoid this, we consider values to be equal to zero when they fall behind $10^{-12}$. Original implemenation REF has $10^{-8}$ but we haven't had any problem with our value.\\ 
@@ -286,22 +265,29 @@ We have an association from point to sub-hypercube $f: y \rightarrow b$ and need
 
 \subsection{Complexity of Quadtree building}
 So as to go with the flow of the paper, we will split the complexiy analysis in two part. As the Flowtree algorithm is meant for nearest neighboor search, the Quadtree $Q(X)$ needs only to be build once, and the computation of $\widetilde{W}_1$ is meant to be repeated for many distributions. Here, we will only cover the cost of buildin $Q(X)$.\\
-The paper advertises the cost of building $Q(X)$ as $\widetilde{\mathcal{O}}(\vert X \vert d \log(d\Phi))$. For those unfamiliar with the notation, such as I was, $\widetilde{\mathcal{O}}(n)$ is a shorthand for $\mathcal{O}(n \log(n))$. However, it makes two hypothesis on the data $X$: non-negative coordinates and $\min_{(x, x') \in X^2} \Vert x - x' \Vert = 1$. The former is easy to guarantee by offsetting $X$ by its minimal coordinate, which can be done in time $\mathcal{O}(\vert X \vert d)$.  The latter is however harder to achieve. It's unclear which norm is used, but regardless of whether it is $\Vert \Vert_1$ or $\Vert \Vert_2$, computing the maximal distance plus scaling costs $\mathcal{O}(\Vert X \Vert^2 d)$. Then, suppose the minimal distance is proportionnal to $2^{-\vert X \vert}$: then $\Phi$ implicitely carries the inverse of this factor, since it's the maximal coordinnate \textbf{after} scaling $X$, and $\log(d\Phi) = \mathcal{O}(\vert X \vert \log(d))$. This is in my opinion one of the weak point of the paper: the fact that the minimal distance is reduced to $1$ is actually a big assumption and has an impact on any complexity analysis where $\Phi$ appears.\\
-Plus, in parctice, it seems\footnote{source: discussing this with Gabriel Peyré} is skipped, as it's quite heavy. This doesn't mean that the problem due to $\Phi$ disappears, because then the complexity of $Q(X)$'s construction can't be bounded in the way the paper does it.\\
-No matter how you slice the pie, figure \ref{worst_case_qb} shows how the Quadtree building can cost at least $\mathcal{O}(\vert X \vert d)+ \mathcal{O}((\vert X \vert - 1) d) + \dots + \mathcal{O}(d) = \mathcal{O}(\vert X \vert^2 d)$ because at each split, the cost of the split is $\mathcal{O}(\vert Y \vert d)$ where $Y$ is the set of points inside the hypercube, and each split only removes one point.
+The paper advertises the cost of building $Q(X)$ as $\widetilde{\mathcal{O}}(\vert X \vert d \log(d\Phi))$. For those unfamiliar with the notation, such as I was, $\widetilde{\mathcal{O}}(n)$ is a shorthand for $\mathcal{O}(n \log(n))$. However, it makes two hypothesis on the data $X$: non-negative coordinates and $\min_{(x, x') \in X^2} \Vert x - x' \Vert = 1$. The former is easy to guarantee by offsetting $X$ by its minimal coordinate, which can be done in time $\mathcal{O}(\vert X \vert d)$.  The latter is however harder to achieve. It's unclear which norm is used, but regardless of whether it is $\Vert \Vert_1$ or any $\Vert \Vert_p$, computing the maximal distance plus scaling costs $\mathcal{O}(\vert X \vert^2 d)$. Furthermore, this factor can be quite large. Suppose the minimal distance is proportionnal to $2^{-\vert X \vert}$, as is the case in \ref{worst_case_qb}, then $\Phi$ implicitely carries the inverse of this factor, since it's the maximal coordinnate \textbf{after} scaling $X$, so $\log(d\Phi) = \mathcal{O}(\vert X \vert \log(d))$. This is in my opinion one of the weak point of the paper: the fact that the minimal distance is reduced to $1$ is actually a big assumption and has an impact on any complexity analysis where $\Phi$ appears.\\
+Plus, in parctice, it seems\footnote{source: discussing this with Gabriel Peyré} is skipped, as it's quite heavy. This doesn't mean that the problem due to $\Phi$ disappears, because then the complexity of $Q(X)$'s construction can't be bounded in the same way the paper does it.\\
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.35\textwidth]{imgs/worst_case_qb.png}
-\caption{An set $X$ where building the Quadtree is manifeslty in $\mathcal{O}(\vert X \vert^2 d)$}
+\caption{An set $X$ where the minimal distance is inversly exponnetial to $\vert X \vert$}
 \label{worst_case_qb}
 \end{figure}
 
+%TODO: Figure out complexity myself
 
+\subsection{Complexity of $\widetilde{W}_1$ estimation}
+In this subsection, we suppose we've built the $Q(X)$. The next step is to compute $D(X, \mu, \nu)$ which requires copying $Q(X)$ and introducing demand for each node.\\
+Notice that demand tree nodes are only used if at least one of their child is a leaf $(i)$ such that $i \in \supp(\mu) \cap \supp(\nu)$. By traversing $Q(X)$ in preorder, we can apply this and only copy the nodes that verify this, we just have to backpropagate a boolean by node that's only true if the node or one of its chlidren is a leaf in the support. Since the supports of $\mu$ and $\nu$ are supposed to be bounded by $s$, there are at most $2s$ leafs that verify this, and $2sh$ nodes that verify this ($h$ is $Q(X)$'s height). The demand introduced at this step is either a $3 \times 1$ or $3 \times 0$ array with constant build-time.\\
+We deduce the complexity of building $D(X, \mu, \nu)$ is $\mathcal{O}(sh)$. We now need to compute the optimal flow from it. Each echange (step 3 of the algorithm in \ref{ssec:computing_optimal_flow}) cancels either $\mu_i$ or $\nu_j$, so this happens at most $2s$ times. When such an exhange happens, we also need to compute $\Vert x_i - x_j \Vert_p$, so the total complexity of all exhanges is $\mathcal{O}(sd)$. To carry out all exhanges, we need to traverse the whole tree, so we add a complexity of $\mathcal{O}(sh)$ and end up with a complexity of $\mathcal{O}(s(h+d))$. 
 
+\subsection{Accuracy of $\widetilde{W}_1$ estimation}
+%TODO: figure out why the fuck this is so unclear
 
+\section{Numerics}
 
-
+\subsection{Spherical model}
 
 
 

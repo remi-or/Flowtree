@@ -1,0 +1,5 @@
+Scalable Nearest Neighbor Search for Optimal Transport
+https://arxiv.org/pdf/1910.04126.pdf
+
+Approximation algorithms for 1-Wasserstein distance between persistence diagrams
+https://arxiv.org/pdf/2104.07710.pdf

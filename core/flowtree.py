@@ -1,7 +1,8 @@
 from __future__ import annotations
-from typing import Tuple, Set
-from collections import defaultdict
+from typing import Tuple, Set, Optional, List, Union
+from collections import defaultdict, OrderedDict
 import numpy as np
+from numpy.random import RandomState
 from typing import Any
 from treeswift import Tree, Node
 from numpy import ndarray as Array
@@ -118,12 +119,21 @@ class Quadtree(Tree):
             optimal_flow = node.resolve_demand(optimal_flow)
         return dict(optimal_flow)
 
-    def compute_w1_distance(self, d0: Distribution, d1: Distribution):
+    def compute_w1_distance(self, 
+        d0: Distribution, 
+        d1: Distribution, 
+        p: int | List[int],
+    ) -> Tuple[float, List[float]]:
+        return_int = isinstance(p, int)
+        ps = [p] if return_int else p
         optimal_flow = self.compute_optimal_flow(d0, d1)
-        w1_distance = 0
-        for (i, j), coeff in optimal_flow.items():
-            w1_distance += coeff * np.linalg.norm(self.X[i, 1:] - self.X[j, 1:], 1)
-        return w1_distance
+        w1_estimates: List[float] = []
+        for p in ps:
+            w1_distance = 0
+            for (i, j), coeff in optimal_flow.items():
+                w1_distance += coeff * np.linalg.norm(self.X[i, 1:] - self.X[j, 1:], p)
+            w1_estimates.append(w1_distance)
+        return (w1_estimates[0] if return_int else w1_estimates)
 
     def compute_tree_distance(self, i: int, j: int) -> float:
         found = []
@@ -206,7 +216,9 @@ class Distribution:
         if abs(mass - 1) > EPS:
             print(f"Normalizing distribution's mass from {mass} to 1")
             weights /= mass
-        self.core = {point : weight for point, weight in zip(support, weights)}
+        self.core = OrderedDict()
+        for point, weight in zip(support, weights):
+            self.core[point] = weight
 
     def __call__(self, index: int) -> float:
         if index in self.core:
@@ -219,17 +231,51 @@ class Distribution:
     def __contains__(self, key: Any) -> bool:
         return (key in self.core)
 
-    def support(self) -> Set[int]:
-        return set(self.core.keys())
+    def __len__(self) -> int:
+        return len(self.core)
+
+    def support(self, container: str = 'set') -> Union[Set[int], Array]:
+        if container == 'set':
+            return set(self.core.keys())
+        elif container == 'array':
+            return np.array(list(self.core.keys()))
+        elif container == 'list':
+            return list(self.core.keys())
+        else:
+            raise ValueError(f"Unknown container: {container}")
+
+    def weights(self, container: str = 'array') -> Array:
+        if container == 'array':
+            return np.array(list(self.core.values()))
+        elif container == 'list':
+            return list(self.core.values())
+        else:
+            raise ValueError(f"Unknown container: {container}")
+
+
+    def relative_values(self) -> Array:
+        values = np.array(list(self.core.values()))
+        values -= np.min(values)
+        values /= np.max(values)
+        return values
 
     @classmethod
-    def uniform_distribution(cls, N: int, s: int) -> Distribution:
-        support = np.arange(0, N, 1)
-        np.random.shuffle(support)
-        support = support[:s]
-        weights = np.random.rand(s)
-        weights /= np.sum(weights)
-        return Distribution(support, weights)
+    def uniform_distribution(cls, N: int, s: int,
+        rs: Optional[RandomState] = None,
+    ) -> Distribution:
+        rs = np.random if (rs is None) else rs
+        return Distribution(rs.choice(N, s, False), np.full((s,), 1/s))
+
+    @classmethod
+    def from_array(cls, coeffs: Array) -> Distribution:
+        support = coeffs.nonzero()[0]
+        return Distribution(support, coeffs[support])
+
+    @classmethod
+    def from_core(cls, core) -> Distribution:
+        distrib = Distribution(np.zeros(1), np.ones(1))
+        distrib.core = core
+        return distrib
 
     def plot(self, N: int):
         support = list(self.core.keys())
@@ -248,26 +294,14 @@ def compute_marginals(flow):
                 marginals[i][k[i]] = amount
     return marginals
 
-
 def reference_w1_distance(
     points: Array, 
     mu: Distribution, 
     nu: Distribution,
+    p: int
 ) -> float:
     mu_support, nu_support = list(mu.support()), list(nu.support())
     points_mu, points_nu = points[mu_support], points[nu_support]
-    M = ot.dist(points_mu, points_nu, metric='cityblock')
+    M = ot.dist(points_mu, points_nu, 'euclidean', p)
     weights_mu, weights_nu = [mu(i) for i in mu_support], [nu(i) for i in nu_support]
     return ot.emd2(weights_mu, weights_nu, M)
-
-def compare_estimate_and_reference(
-    dimension: int, 
-    number_of_points: int, 
-    support_size: int,
-) -> Tuple[float, float]:
-    points = np.random.normal(size=(number_of_points, dimension)) 
-    mu = Distribution.uniform_distribution(number_of_points, support_size)
-    nu = Distribution.uniform_distribution(number_of_points, support_size)
-    w1_dist = Quadtree(points).compute_w1_distance(mu, nu)
-    w1_ref = reference_w1_distance(points, mu, nu)
-    return w1_dist, w1_ref
