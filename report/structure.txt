@@ -1,19 +1,20 @@
-Abstract (½ page): 
-What problem(s) is studied ? 
-Why is it relevant ? 
-What solution(s) is proposed ? 
-Which contributions (theory, numerics, etc) ? 
+OK Abstract (½ page): 
+OK What problem(s) is studied ? 
+OK Why is it relevant ? 
+OK What solution(s) is proposed ? 
+OK Which contributions (theory, numerics, etc) ? 
 
-Introduction (~3 pages) : 
-Presentation of the problem(s). 
-Previous works (at least a few citations). If relevant, include things that you have seen during the MVA course (or possibly other courses). 
-Contributions. Why is the studied method different/better/worse/etc. than existing previous works. 
+OK Introduction (~3 pages) : 
+OK Presentation of the problem(s). 
+OK Previous works (at least a few citations). If relevant, include things that you have seen during the MVA course (or 	possibly other courses). 
+OK Contributions. Why is the studied method different/better/worse/etc. than existing previous works. 
 
-Main body (~10 pages) : 
-Presentation of the method(s). 
-Theoretical guarantees. 
-Numerics. 
+OK Main body (~10 pages) : 
+OK Presentation of the method(s). 
+OK Theoretical guarantees. 
+OK Numerics. 
 
-Conclusion and perspective (~1 page)
-Summary of the result obtained: pros and cons (limitation, problems, error in the articles, etc)
-Possible improvement/extension
+OK Conclusion and perspective (~1 page)
+OK Summary of the result obtained: pros and cons (limitation, problems, error in the articles, etc)
+OK Possible improvement/extension
+OK Link with the course

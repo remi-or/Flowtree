@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import ot
 
 
-EPS = 1e-12
+EPS = 1e-10
 
 
 class Hypercube:
@@ -74,13 +74,15 @@ class Quadtree(Tree):
 
     "A class to implement the quadtree."
 
-    def __init__(self, points: Array):
+    def __init__(self, points: Array, seed: int = 0):
         """Initializes and builds the quadtree from the given (points)"""
         super().__init__()
         self.format_points(points)
         self.format_root()
+        sigma = np.random.RandomState(0).rand(self.d) * self.phi
         bounds = np.zeros((self.d, 2))
-        bounds[:, 1] = self.phi
+        bounds[:, 0] = sigma - self.phi
+        bounds[:, 1] = sigma + self.phi
         self.root.add_child(
             QuadNode.from_hypercube(Hypercube(bounds, self.X), np.log(self.phi))
             # if done with sigma, should be np.log(self.phi)+1
@@ -212,10 +214,17 @@ class QuadNode(Node):
 class Distribution:
 
     def __init__(self, support: Array, weights: Array) -> None:
+        # Check support is well defined
+        mask = weights > EPS
+        if not mask.all():
+            support = support[mask]
+            weights = weights[mask]
+        # Check distribution has mass 1
         mass = np.sum(weights)
         if abs(mass - 1) > EPS:
             print(f"Normalizing distribution's mass from {mass} to 1")
             weights /= mass
+        # Form core
         self.core = OrderedDict()
         for point, weight in zip(support, weights):
             self.core[point] = weight
@@ -226,7 +235,7 @@ class Distribution:
         return 0.0
 
     def __repr__(self) -> str:
-        return '\t'.join(list(self.core.keys())[:6]) + '...\n' + '\t'.join(list(self.core.values())[:6])
+        return repr(np.vstack((self.support('array')[:6], self.weights('array')[:6])))
     
     def __contains__(self, key: Any) -> bool:
         return (key in self.core)
@@ -298,10 +307,14 @@ def reference_w1_distance(
     points: Array, 
     mu: Distribution, 
     nu: Distribution,
-    p: int
+    p: int,
+    return_dist_matrix: bool = False,
 ) -> float:
     mu_support, nu_support = list(mu.support()), list(nu.support())
     points_mu, points_nu = points[mu_support], points[nu_support]
     M = ot.dist(points_mu, points_nu, 'euclidean', p)
     weights_mu, weights_nu = [mu(i) for i in mu_support], [nu(i) for i in nu_support]
-    return ot.emd2(weights_mu, weights_nu, M)
+    if return_dist_matrix:
+        return ot.emd2(weights_mu, weights_nu, M), M
+    else:
+        return ot.emd2(weights_mu, weights_nu, M)

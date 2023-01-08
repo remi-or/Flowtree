@@ -4,3 +4,5 @@
 *.svg
 *.pdf
 *.png
+*.json
+slides/

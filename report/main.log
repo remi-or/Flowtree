@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.26)  5 JAN 2023 01:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.26)  8 JAN 2023 15:06
 entering extended mode
 **./main.tex
 (main.tex
@@ -6,8 +6,8 @@ LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> xparse <2020-03-03>
 (C:\Users\meri2\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(C:\Users\meri2\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+(C:\Users\meri2\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 \c@part=\count179
 \c@section=\count180
@@ -930,27 +930,35 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \qroofx=\count324
 \qroofy=\count325
 \@qrscratchbox=\box85
+) (C:\Users\meri2\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip166
+\enit@outerparindent=\dimen199
+\enit@toks=\toks32
+\enit@inbox=\box86
+\enit@count@id=\count326
+\enitdp@description=\count327
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 (C:\Users\meri2\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
 slations-basic-dictionary-english.trsl
@@ -960,17 +968,17 @@ nslations-basic-dictionary')
 (C:\Users\meri2\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count326
-\scratchdimen=\dimen199
-\scratchbox=\box86
-\nofMPsegments=\count327
-\nofMParguments=\count328
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count329
-\MPscratchDim=\dimen256
-\MPnumerator=\count330
-\makeMPintoPDFobject=\count331
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count328
+\scratchdimen=\dimen256
+\scratchbox=\box87
+\nofMPsegments=\count329
+\nofMParguments=\count330
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count331
+\MPscratchDim=\dimen257
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
+\everyMPtoPDFconversion=\toks34
 )
 (C:\Users\meri2\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -981,7 +989,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring OFF on input line 38.
 
 (C:\Users\meri2\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -993,11 +1001,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count332
+\c@section@level=\count334
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -1022,12 +1030,12 @@ LaTeX Info: Redefining \nameref on input line 37.
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1038,232 +1046,508 @@ LaTeX Info: Redefining \nameref on input line 37.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 37.
-<imgs/mva.png, id=59, 720.89325pt x 211.992pt>
+LaTeX Info: Redefining \selectfont on input line 38.
+<imgs/mva.png, id=127, 720.89325pt x 211.992pt>
 File: imgs/mva.png Graphic file (type png)
 <use imgs/mva.png>
-Package pdftex.def Info: imgs/mva.png  used on input line 42.
+Package pdftex.def Info: imgs/mva.png  used on input line 43.
 (pdftex.def)             Requested size: 236.01561pt x 69.40442pt.
- [1
 
-{C:/Users/meri2/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./imgs/mva.png>
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
 
+LaTeX Warning: Citation `Flowtree' on page 1 undefined on input line 57.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
 
 (C:\Users\meri2\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
 
 
 (C:\Users\meri2\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Missing character: There is no d in font msbm10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Underfull \hbox (badness 10000) in paragraph at lines 57--65
 
  []
 
-<imgs/quadtree.png, id=74, 1335.99126pt x 731.73375pt>
-File: imgs/quadtree.png Graphic file (type png)
-<use imgs/quadtree.png>
-Package pdftex.def Info: imgs/quadtree.png  used on input line 90.
-(pdftex.def)             Requested size: 330.42041pt x 180.96788pt.
+
+LaTeX Warning: Citation `MyRepo' on page 1 undefined on input line 66.
+
+[1
+
+{C:/Users/meri2/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./imgs/mva.png>
+]
+
+LaTeX Warning: Citation `CuturiSinkhorn' on page 1 undefined on input line 89.
+
+
+LaTeX Warning: Citation `NearLinearSinkhorn' on page 1 undefined on input line 
+89.
+
+
+LaTeX Warning: Citation `EvenBetterSinkhorn' on page 1 undefined on input line 
+89.
+
+
+LaTeX Warning: Citation `OGSlicedWD' on page 1 undefined on input line 91.
+
+
+LaTeX Warning: Citation `TwoW1approx' on page 1 undefined on input line 93.
+
+
+LaTeX Warning: Citation `UglyQuatree' on page 1 undefined on input line 95.
+
+
+LaTeX Warning: Citation `NiceQuadtree' on page 1 undefined on input line 95.
+
+
+LaTeX Warning: Citation `OnTheQuadtree' on page 1 undefined on input line 95.
+
+
+LaTeX Warning: Citation `Flowtree' on page 1 undefined on input line 101.
+
+
+LaTeX Warning: Citation `ReviewOfTreeMethods' on page 1 undefined on input line
+ 103.
+
+
+LaTeX Warning: Citation `TwOW1approx' on page 1 undefined on input line 103.
+
+
+LaTeX Warning: Citation `TwOW1approx' on page 1 undefined on input line 109.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--112
+
+ []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 
-      [1 <./imgs/quadtree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+l.112 
+       [1] [2]
+Missing character: There is no d in font msbm10!
+
+Overfull \hbox (13.00504pt too wide) in paragraph at lines 134--135
+[]\T1/cmr/m/n/10.95 where $\OML/cmm/m/it/10.95 b[]:::b[] \OMS/cmsy/m/n/10.95 2 
+f\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1\OMS/cmsy/m/n/10
+.95 g[]$\T1/cmr/m/n/10.95 . We can call this op-er-a-tion \T1/cmr/bx/n/10.95 sp
+lit-ting $\OML/cmm/m/it/10.95 H$ \T1/cmr/m/n/10.95 into sub-hypercubes $\OML/cm
+m/m/it/10.95 H[]; [] ; H[]$\T1/cmr/m/n/10.95 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-<imgs/qtree_distrib_ftree.png, id=93, 347.1369pt x 100.2144pt>
+<imgs/quadtree.png, id=163, 1335.99126pt x 731.73375pt>
+File: imgs/quadtree.png Graphic file (type png)
+<use imgs/quadtree.png>
+Package pdftex.def Info: imgs/quadtree.png  used on input line 141.
+(pdftex.def)             Requested size: 330.42041pt x 180.96788pt.
+
+LaTeX Warning: Citation `Flowtree' on page 3 undefined on input line 146.
+
+[3 <./imgs/quadtree.png>]
+<imgs/qtree_distrib_ftree.png, id=172, 347.1369pt x 92.9874pt>
 File: imgs/qtree_distrib_ftree.png Graphic file (type png)
 <use imgs/qtree_distrib_ftree.png>
-Package pdftex.def Info: imgs/qtree_distrib_ftree.png  used on input line 116.
-(pdftex.def)             Requested size: 377.62642pt x 109.01897pt.
-[2 <./imgs/qtree_distrib_ftree.png>] [3]
+Package pdftex.def Info: imgs/qtree_distrib_ftree.png  used on input line 164.
+(pdftex.def)             Requested size: 368.18378pt x 98.62717pt.
+ [4 <./imgs/qtree_distrib_ftree.png>] [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 229.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 229.
+(hyperref)                removing `math shift' on input line 277.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 229.
+(hyperref)                removing `subscript' on input line 277.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 277.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--263
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 267--270
-
- []
-
-<imgs/worst_case_qb.png, id=124, 734.745pt x 731.73375pt>
-File: imgs/worst_case_qb.png Graphic file (type png)
-<use imgs/worst_case_qb.png>
-Package pdftex.def Info: imgs/worst_case_qb.png  used on input line 273.
-(pdftex.def)             Requested size: 165.2138pt x 164.5325pt.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 280.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 280.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 280.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 280.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 280.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 280.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 280.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textstyle' on input line 280.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 280.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathaccent' on input line 280.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 280.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 280.
-
-[5 <./imgs/worst_case_qb.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textstyle' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathaccent' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 285.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 285.
+LaTeX Warning: Citation `FlowtreeGit' on page 6 undefined on input line 302.
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 307--311
+
+ []
+
+<imgs/worst_case_qb.png, id=205, 734.745pt x 731.73375pt>
+File: imgs/worst_case_qb.png Graphic file (type png)
+<use imgs/worst_case_qb.png>
+Package pdftex.def Info: imgs/worst_case_qb.png  used on input line 324.
+(pdftex.def)             Requested size: 165.2138pt x 164.5325pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 331.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\setbox' on input line 331.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 331.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 331.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 331.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 331.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 331.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\textstyle' on input line 331.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 331.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathaccent' on input line 331.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 331.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 331.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\setbox' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\textstyle' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathaccent' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 336.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
+
+ []
+
+[8 <./imgs/worst_case_qb.png>]
+
+LaTeX Warning: Citation `Flowtree' on page 9 undefined on input line 349.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
+
+ []
+
+[9]
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3
+90.
+ (C:\Users\meri2\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+
+LaTeX Warning: Citation `POT' on page 10 undefined on input line 390.
+
+
+LaTeX Warning: Citation `POTalgo' on page 10 undefined on input line 390.
+
+<imgs/spherical_repr.png, id=228, 393.1488pt x 377.9721pt>
+File: imgs/spherical_repr.png Graphic file (type png)
+<use imgs/spherical_repr.png>
+Package pdftex.def Info: imgs/spherical_repr.png  used on input line 408.
+(pdftex.def)             Requested size: 236.01561pt x 226.90611pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 415.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 415.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 415.
+
+
+LaTeX Warning: Citation `FlowtreeGit' on page 10 undefined on input line 416.
+
+[10 <./imgs/spherical_repr.png>]
+<imgs/spherical_boxplots_ratio_p.png, id=240, 867.24pt x 289.08pt>
+File: imgs/spherical_boxplots_ratio_p.png Graphic file (type png)
+<use imgs/spherical_boxplots_ratio_p.png>
+Package pdftex.def Info: imgs/spherical_boxplots_ratio_p.png  used on input lin
+e 420.
+(pdftex.def)             Requested size: 472.03123pt x 157.34477pt.
+
+Overfull \hbox (24.34052pt too wide) in paragraph at lines 429--432
+\T1/cmr/m/n/10.95 For the range of $\OML/cmm/m/it/10.95 d$\T1/cmr/m/n/10.95 , w
+e sam-ple low di-men-sion more than high di-men-sion and set $\OML/cmm/m/it/10.
+95 d \OMS/cmsy/m/n/10.95 2 f\OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 ; \OT1/cmr/
+m/n/10.95 3\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 5\OML/cmm/m/it/10.95 ; \OT1
+/cmr/m/n/10.95 10\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 20\OML/cmm/m/it/10.95
+ ; [] ; \OT1/cmr/m/n/10.95 100\OMS/cmsy/m/n/10.95 g$\T1/cmr/m/n/10.95 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--432
+
+ []
+
+<imgs/spherical_ratio_by_d_v2.png, id=241, 492.8814pt x 328.1058pt>
+File: imgs/spherical_ratio_by_d_v2.png Graphic file (type png)
+<use imgs/spherical_ratio_by_d_v2.png>
+Package pdftex.def Info: imgs/spherical_ratio_by_d_v2.png  used on input line 4
+35.
+(pdftex.def)             Requested size: 377.62642pt x 251.3806pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `Flowtree' on page 11 undefined on input line 440.
+
+[11 <./imgs/spherical_boxplots_ratio_p.png>]
+<imgs/gaussian_repr.png, id=251, 924.3333pt x 211.7511pt>
+File: imgs/gaussian_repr.png Graphic file (type png)
+<use imgs/gaussian_repr.png>
+Package pdftex.def Info: imgs/gaussian_repr.png  used on input line 459.
+(pdftex.def)             Requested size: 472.03123pt x 108.13701pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imgs/gaussian_repr_2.png, id=253, 928.6695pt x 237.0456pt>
+File: imgs/gaussian_repr_2.png Graphic file (type png)
+<use imgs/gaussian_repr_2.png>
+Package pdftex.def Info: imgs/gaussian_repr_2.png  used on input line 469.
+(pdftex.def)             Requested size: 472.03123pt x 120.48653pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imgs/gaussian_quality_by_dim.png, id=256, 489.9906pt x 326.6604pt>
+File: imgs/gaussian_quality_by_dim.png Graphic file (type png)
+<use imgs/gaussian_quality_by_dim.png>
+Package pdftex.def Info: imgs/gaussian_quality_by_dim.png  used on input line 4
+79.
+(pdftex.def)             Requested size: 377.62642pt x 251.75856pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./imgs/spherical_ratio_by_d_v2.png>]
+<imgs/gaussian_time_by_dim.png, id=271, 731.01105pt x 283.65974pt>
+File: imgs/gaussian_time_by_dim.png Graphic file (type png)
+<use imgs/gaussian_time_by_dim.png>
+Package pdftex.def Info: imgs/gaussian_time_by_dim.png  used on input line 491.
+
+(pdftex.def)             Requested size: 472.03123pt x 183.16472pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--498
+
+ []
+
+[13 <./imgs/gaussian_repr.png> <./imgs/gaussian_repr_2.png>] [14 <./imgs/gaussi
+an_quality_by_dim.png> <./imgs/gaussian_time_by_dim.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 505--507
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 508--510
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\setbox' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\textstyle' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathaccent' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 515.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 515.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
+
+ []
+
+[15
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 525--528
+
+ []
+
+[16]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     306.
+(LaTeX3)     535.
 
  (main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C626B885A0F22882ACB91DCF6F8F82EE;2290.
+(rerunfilecheck)             Checksum: 7E37148A4E0656D805AD71B736ED6192;5459.
  ) 
 Here is how much of TeX's memory you used:
- 18605 strings out of 479334
- 340901 string characters out of 2857084
- 738448 words of memory out of 3000000
- 35740 multiletter control sequences out of 15000+200000
- 421043 words of font info for 68 fonts, out of 3000000 for 9000
+ 19074 strings out of 479334
+ 349456 string characters out of 2857084
+ 746049 words of memory out of 3000000
+ 36148 multiletter control sequences out of 15000+200000
+ 423105 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,17n,116p,1313b,848s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\meri2\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
-0800.pk> <C:\Users\meri2\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecrm0600.pk> <C:\Users\meri2\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecrm0700.pk> <C:\Users\meri2\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecti1000.pk> <C:\Users\meri2\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\meri2\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\meri2\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\meri2\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\meri2\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\meri2\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\meri2\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk><C:/Users/m
-eri2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
-:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb><C:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmmi12.pfb><C:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmmi5.pfb><C:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi7.pfb><C:/Users/meri2/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/meri2/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/meri2/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/meri2/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/meri2/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
-/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><
-C:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y7.pfb><C:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/symbols/msam10.pfb><C:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (7 pages, 341110 bytes).
+ 113i,17n,116p,999b,861s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\meri2\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss
+1095.pk> <C:\Users\meri2\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm0900.pk> <C:\Users\meri2\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecrm0600.pk> <C:\Users\meri2\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecrm0800.pk> <C:\Users\meri2\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\meri2\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\meri2\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\meri2\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\meri2\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\meri2\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\meri2\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\
+meri2\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk><C:/U
+sers/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.
+pfb><C:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb><C:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb><C:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb><C:/Users/meri2/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/meri2/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/meri2/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/meri2/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/meri2/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
+meri2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C
+:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
+8.pfb><C:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/symbols/msam10.pfb><C:/Users/meri2/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (17 pages, 993012 bytes).
 PDF statistics:
- 448 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 657 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
 
